@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sqlalchemy-extension-library"
+version = "0.1.0"
+description = "A library for SQLAlchemy that extends some of the functionality already implemented in SQLAlchemy, improving its behavior and making it easier to use. (Not related to the SQLAlchemy library)"
+requires-python = ">=3.9"
+dependencies = ["sqlalchemy>=2.0,<3]
+
+[project.optional-dependencies]
+dev = "["pytest"]
